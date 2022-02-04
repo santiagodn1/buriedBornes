@@ -192,9 +192,9 @@ function accionChequearSubidaNivel() {
 function subirDeNivel() {
     experiencia = 0;
     experienciaLimite = experienciaLimite * 1.5;
-    console.log(nivel)
+
     nivel = nivel + 1;
-    console.log(nivel)
+
     player.clase.atributos.ataque = parseInt(player.clase.atributos.ataque * 1.2);
     player.clase.atributos.magia = parseInt(player.clase.atributos.magia * 1.2);
     player.clase.atributos.suerte = parseInt(player.clase.atributos.suerte * 1.2);

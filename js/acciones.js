@@ -405,7 +405,6 @@ function checkMana() {
 
 function checkIfCrit() {
     chanceCrit = Math.floor((Math.random() * (100 - 0)))
-    console.log(chanceCrit)
     if (player.clase.atributos.suerte > chanceCrit) {
         $('.registroBatalla').append("<p class=textoGolpeCritico> ¡GOLPE CRÍTICO! </p>");
         dañoDeAccion = parseInt(dañoDeAccion * 1.5)
