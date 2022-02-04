@@ -1,0 +1,64 @@
+{
+    "enemigos": [
+        {
+            "id": 0,
+            "nombre": "Esqueleto",
+            "atributos": {
+                "ataque": 8,
+                "vidaMax": 80,
+                "experiencia": 50,
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "avatar": "../imagenes/enemigos/esqueleto.jpg"
+        },
+        {
+            "id": 1,
+            "nombre": "Kobold",
+            "atributos": {
+                "ataque": 8,
+                "vidaMax": 80,
+                "experiencia": 50,
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "avatar": "../imagenes/enemigos/kobold.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Zombie",
+            "atributos": {
+                "ataque": 8,
+                "vidaMax": 80,
+                "experiencia": 50,
+                "animacion": "../imagenes/animaciones/mordisco.gif",
+                "sonido": "../sonido/efectos/mordisco.wav"
+            },
+            "avatar": "../imagenes/enemigos/zombie.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Esqueleto Sanguinario",
+            "atributos": {
+                "ataque": 12,
+                "vidaMax": 200,
+                "experiencia": 100,
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "avatar": "../imagenes/enemigos/esqueletoSanguinario.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Rey Esqueleto",
+            "atributos": {
+                "ataque": 25,
+                "vidaMax": 250,
+                "experiencia": 150,
+                "animacion": "../imagenes/animaciones/ataqueReyEsqueleto.gif",
+                "sonido": "../sonido/efectos/evilLaugh.flac"
+            },
+            "avatar": "../imagenes/enemigos/esqueletoRey.jpg"
+        }
+    ]
+}

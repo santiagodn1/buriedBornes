@@ -1,0 +1,148 @@
+{
+    "habilidades": [
+        {
+            "nombre": "caballero",
+            "skill1": {
+                "nombre": "Ataque",
+                "daño": 0,
+                "mana": 0,
+                "icono": "../imagenes/habilidades/ataque.jpg",
+                "descripcion": "Realizas un ataque básico a tu oponente equivalente a tu ataque",
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "skill2": {
+                "nombre": "GranGolpe",
+                "daño": 1.5,
+                "mana": 15,
+                "icono": "../imagenes/habilidades/granGolpe.jpg",
+                "descripcion": "Realizas una voltereta asestando un golpe de 150% de ataque",
+                "animacion": "../imagenes/animaciones/granGolpe.gif",
+                "sonido": "../sonido/efectos/sword2.ogg"
+            },
+            "skill3": {
+                "nombre": "Berserker",
+                "daño": 3,
+                "mana": 0,
+                "icono": "../imagenes/habilidades/berserker.png",
+                "descripcion": "Entras en modo berserker asestando un 300% de daño pero sacrificando 100% a cambio",
+                "animacion": "../imagenes/animaciones/berserker.gif",
+                "sonido": "../sonido/efectos/sword2.ogg"
+            }
+        },
+        {
+            "nombre": "mago",
+            "skill1": {
+                "nombre": "Ataque",
+                "daño": 0,
+                "mana": 0,
+                "icono": "../imagenes/habilidades/ataque.jpg",
+                "descripcion": "Realizas un ataque básico a tu oponente equivalente a tu ataque",
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "skill2": {
+                "nombre": "BolaFuego",
+                "daño": 1.5,
+                "mana": 15,
+                "icono": "../imagenes/habilidades/fuego.png",
+                "descripcion": "lanzas una bola de fuego asestando 150% de tu magia",
+                "animacion": "../imagenes/animaciones/fuego.gif",
+                "sonido": "../sonido/efectos/fire.wav"
+            },
+            "skill3": {
+                "nombre": "Relampago",
+                "daño": 2,
+                "mana": 30,
+                "icono": "../imagenes/habilidades/relampago.png",
+                "descripcion": "invocas una tormenta la realizando un daño de 200% de tu magia",
+                "animacion": "../imagenes/animaciones/relampago.gif",
+                "sonido": "../sonido/efectos/fire.wav"
+            }
+        },
+        {
+            "nombre": "sacerdote",
+            "skill1": {
+                "nombre": "Ataque",
+                "daño": 0,
+                "mana": 0,
+                "icono": "../imagenes/habilidades/ataque.jpg",
+                "descripcion": "Realizas un ataque básico a tu oponente equivalente a tu ataque",
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "skill2": {
+                "nombre": "Sanacion",
+                "daño": 2,
+                "mana": 15,
+                "icono": "../imagenes/habilidades/sanacion.jpg",
+                "descripcion": "Te sanas un 200% de tu magia actual",
+                "animacion": "../imagenes/animaciones/heal.gif",
+                "sonido": "../sonido/efectos/heal.wav"
+            },
+            "skill3": {
+                "nombre": "LanzaSanta",
+                "daño": 2,
+                "mana": 30,
+                "icono": "../imagenes/habilidades/holy.png",
+                "descripcion": "invocas una lanza santa realizando un daño de 200% de tu magia",
+                "animacion": "../imagenes/animaciones/lanzaSanta.gif",
+                "sonido": "../sonido/efectos/lanza.wav"
+            }
+        },
+        {
+            "nombre": "ranger",
+            "skill1": {
+                "nombre": "Ataque",
+                "daño": 0,
+                "mana": 0,
+                "icono": "../imagenes/habilidades/ataque.jpg",
+                "descripcion": "Realizas un ataque básico a tu oponente equivalente a tu ataque",
+                "animacion": "../imagenes/animaciones/ataque.gif",
+                "sonido": "../sonido/efectos/sword.wav"
+            },
+            "skill2": {
+                "nombre": "DobleDisparo",
+                "daño": 1,
+                "mana": 10,
+                "icono": "../imagenes/habilidades/dobleDisparo.jpg",
+                "descripcion": "Atacas 2 veces con disparos de flecha",
+                "animacion": "../imagenes/animaciones/dobleFlecha.gif",
+                "sonido": "../sonido/efectos/flecha.wav"
+            },
+            "skill3": {
+                "nombre": "FlechaSangre",
+                "daño": 1.5,
+                "mana": 20,
+                "icono": "../imagenes/habilidades/flechaSangre.jpg",
+                "descripcion": "Atacas con una flecha imbuida por tu sangre, curandote el 50% del daño realizado",
+                "animacion": "../imagenes/animaciones/flechaSangre.gif",
+                "sonido": "../sonido/efectos/flechaSangre.wav"
+            }
+        },
+        {
+            "nombre": "ladron",
+            "skill1": {
+                "nombre": "Ataque"
+            },
+            "skill2": {
+                "nombre": "Robar"
+            },
+            "skill3": {
+                "nombre": "Cuchillas"
+            }
+        },
+        {
+            "nombre": "paladin",
+            "skill1": {
+                "nombre": "Ataque"
+            },
+            "skill2": {
+                "nombre": "MartilloSanto"
+            },
+            "skill3": {
+                "nombre": "ToqueInmortal"
+            }
+        }
+    ]
+}

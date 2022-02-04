@@ -1,0 +1,54 @@
+html { color:white;
+  background-color: black;
+}
+
+#containerLaberinto {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . jefe1 . . jefe2"
+    "inicio1 bloque1 bloque2 jefe1 bloque3 bloque4 jefe2"
+    ". . . jefe1 . . jefe2"
+    ". . . . . . ."
+    ". . . . . . .";  
+    width: 1200px; 
+    height: 800px;
+    text-align: center;
+    transition: 1s;
+  }
+
+.inicio1 { grid-area: inicio1;;
+  border: 3px solid white;}
+.bloque1 { grid-area: bloque1; 
+  border: 2px solid white;}
+.bloque2 { grid-area: bloque2; 
+  border: 2px solid white;}
+.jefe1 { grid-area: jefe1; 
+  border: 2px solid red;}
+.bloque3 { grid-area: bloque3;
+  border: 2px solid white; }
+.bloque4 { grid-area: bloque4; 
+  border: 2px solid white;}
+.jefe2 { grid-area: jefe2; 
+  border: 2px solid red;}
+
+#imagenHeroe {
+  display:none;
+  position: absolute;
+  top: 340px;
+  left: 30px;
+  height: 120px;
+  width: 120px;
+  border: 2px solid blue;
+  transition: 2s;
+}
+
+#botonMover{
+  margin: 20px;
+}
+

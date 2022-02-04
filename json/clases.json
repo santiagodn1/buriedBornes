@@ -1,0 +1,76 @@
+{
+	"clases": [
+		{
+			"nombre": "caballero",
+			"atributos": {
+				"ataque": 18,
+				"magia": 8,
+				"vidaMax": 150,
+				"manaMax": 80,
+				"suerte": 10,
+				"agilidad": 20
+			},
+			"avatar": "../imagenes/personajes/caballero.jpg"
+		},
+		{
+			"nombre": "mago",
+			"atributos": {
+				"ataque": 10,
+				"magia": 18,
+				"vidaMax": 100,
+				"manaMax": 150,
+				"suerte": 10,
+				"agilidad": 10
+			},
+			"avatar": "../imagenes/personajes/mago.jpg"
+		},
+		{
+			"nombre": "ranger",
+			"atributos": {
+				"ataque": 12,
+				"magia": 10,
+				"vidaMax": 120,
+				"manaMax": 100,
+				"suerte": 30,
+				"agilidad": 25
+			},
+			"avatar": "../imagenes/personajes/ranger.jpg"
+		},
+		{
+			"nombre": "sacerdote",
+			"atributos": {
+				"ataque": 10,
+				"magia": 18,
+				"vidaMax": 100,
+				"manaMax": 150,
+				"suerte": 10,
+				"agilidad": 10
+			},
+			"avatar": "../imagenes/personajes/sacerdote.jpg"
+		},
+		{
+			"nombre": "paladin",
+			"atributos": {
+				"ataque": 15,
+				"magia": 15,
+				"vidaMax": 120,
+				"manaMax": 120,
+				"suerte": 10,
+				"agilidad": 15
+			},
+			"avatar": "../imagenes/personajes/paladin.jpg"
+		},
+		{
+			"nombre": "ladron",
+			"atributos": {
+				"ataque": 15,
+				"magia": 5,
+				"vidaMax": 100,
+				"manaMax": 70,
+				"suerte": 25,
+				"agilidad": 40
+			},
+			"avatar": "../imagenes/personajes/ladron.jpg"
+		}
+	]
+}

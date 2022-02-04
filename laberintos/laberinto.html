@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!--Esto soluciona el error del icon no display --->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/laberinto.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/enfrentamiento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <title>Inicio</title>
+
+</head>
+
+<body>
+    <!--------------->
+    <!--SELEC RAZA--->
+    <!--------------->
+    <div class="flex-container">
+        <div id="seleccionRaza">
+            <a class="imagenHumano" onmouseover="verTextoHumano()" onmouseout="ocultarTextoHumano()" type="button"
+                onclick="seleccionHumano();"></a>
+            <a class="imagenOrco" onmouseover="verTextoOrco()" onmouseout="ocultarTextoOrco()" type="button"
+                onclick="seleccionOrco();"></a>
+            <a class="imagenElfo" onmouseover="verTextoElfo()" onmouseout="ocultarTextoElfo()" type="button"
+                onclick="seleccionElfo();"></a>
+            <a class="imagenNomuerto" onmouseover="verTextoNomuerto()" onmouseout="ocultarTextoNomuerto()" type="button"
+                onclick="seleccionNomuerto();"></a>
+            <div id="fichaRaza">
+                <h1>Selecciona tu Raza</h1>
+                <div id="descripcionRaza">
+                    <div id="textoHumano">
+                        <h3>Los humanos poseen un extraordinario ímpetu y una gran capacidad para
+                            resistir y
+                            expandirse, por lo tanto son la raza dominante en el mundo.</h3>
+                        <hr>
+                        <h4>Beneficio Racial</h4>
+                        <h4>Gracia Heroica | Probabilidad de rematar a tu rival con un golpe de gracia cuando su salud
+                            es menos del 25%</h4>
+
+                    </div>
+                    <div id="textoOrco">
+                        <h3>Junto con su fuerza bruta y comparativamente bajo intelecto,los orcos
+                            son violentos y agresivos, se destacan por dominar al resto a través del miedo y la
+                            brutalidad.</h3>
+                        <hr>
+                        <h4>Beneficio Racial</h4>
+                        <h4>Brutalidad | Tu daño se duplica cuando estas por debajo del 30% de vida</h4>
+                    </div>
+                    <div id="textoElfo">
+                        <h3>Los Elfos son hijos del mundo natural, similares en muchos aspectos
+                            superficiales a las criaturas mágicas, pero al mismo tiempo son también
+                            diferentes.</h3>
+                        <hr>
+                        <h4>Beneficio Racial</h4>
+                        <h4>Fuente de Mana | Las habilidades magicas consumen un 20% menos de mana</h4>
+                    </div>
+                    <div id="textoNomuerto">
+                        <h3>La muerte no ofreció escapatoria a las decenas de humanos asesinados
+                            durante
+                            la guerra. Se hacen llamar Renegados, y ahora luchan por vivir en un mundo que rechaza su
+                            existencia.</h3>
+                        <hr>
+                        <h4>Beneficio Racial</h4>
+                        <h4>Toque de sangre | Te curas el 10% del daño infligido en batalla</h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------->
+        <!--SELEC CLASE-->
+        <!--------------->
+
+        <div class="flex-container">
+
+            <div id="seleccionClase">
+                <div id=descripcionClase></div>
+                <h1 id="fichaHeroe">
+                    Selecciona tu Clase
+                </h1>
+
+                <a class="imagenCaballero" onmouseover="verTextoClase(id)" onmouseout="ocultarTextoClase(id)"
+                    type="button" id="caballero" onclick="seleccionHeroe(id);"></a>
+                <a class="imagenMago" onmouseover="verTextoClase(id)" onmouseout="ocultarTextoClase(id)" type="button"
+                    id="mago" onclick="seleccionHeroe(id);"></a>
+                <a class="imagenRanger" onmouseover="verTextoClase(id)" onmouseout="ocultarTextoClase(id)" type="button"
+                    id="ranger" onclick="seleccionHeroe(id);"></a>
+                <a class="imagenSacerdote" onmouseover="verTextoClase(id)" onmouseout="ocultarTextoClase(id)"
+                    type="button" id="sacerdote" onclick="seleccionHeroe(id);"></a>
+                <a class="imagenPaladin" onmouseover="verTextoClase(id)" onmouseout="ocultarTextoClase(id)"
+                    type="button" id="paladin" onclick="seleccionProximamente();"></a>
+                <a class="imagenLadron" onmouseover="verTextoClase(id)" onmouseout="ocultarTextoClase(id)" type="button"
+                    id="ladron" onclick="seleccionProximamente();"></a>
+            </div>
+        </div>
+
+    </div>
+    <div id="laberintoEntrada">
+        <div>
+            <img src="../imagenes/mapa/laberinto.png" type="button" onclick="iniciarLaberinto();" alt="">
+        </div>
+    </div>
+
+
+    <!--------------->
+    <!-- LABERINTO -->
+    <!--------------->
+
+
+    <div id="containerLaberinto">
+        <img id="imagenHeroe" src="" alt="">
+        <!---  HEROE MINIATURA EN LABERINTO --->
+        <button id="botonMover" onclick="movimientoLaberinto();">MOVER</button>
+        <div class="inicio1"></div>
+        <div class="bloque1"></div>
+        <div class="bloque2"></div>
+        <div class="jefe1"></div>
+        <div class="bloque3"></div>
+        <div class="bloque4"></div>
+        <div class="jefe2"></div>
+    </div>
+
+
+
+
+
+    <!---------------->
+    <!---  COMBATE --->
+    <!---------------->
+
+
+    <div id="containerEnfrentamiento">
+        <div class="heroe">
+            <img id=imagenCombate alt="" style="width:300px; height:300px">
+        </div>
+        <div class="enemigo">
+            <img id="imagenEnemigo" alt="" style="width:300px; height:300px">
+
+        </div>
+        <div class="statsHeroe">
+        </div>
+        <div class="vidaEnemigo">
+            <div class="w3-light-grey">
+                <div class="w3-red" style="height:24px;width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="vidaHeroe">
+            <div class="w3-light-grey">
+                <div class="w3-green" style="height:24px;width:100%">
+                </div>
+            </div><br>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:100%"></div>
+            </div><br>
+            </progress>
+        </div>
+        <div class="experienciaNivel">
+            <br>
+            <div class="w3-light-grey">
+                <div class="w3-yellow" style="height:24px;width:0%"></div>
+            </div><br>
+        </div>
+        <div class="habilidadesHeroe">
+            <div class="grillaHabilidades"></div>
+        </div>
+        <div class="registroBatalla">
+        </div>
+        <div class="esquinaUno"></div>
+        <div class="esquinaDos"></div>
+        <div class="esquinaTres"></div>
+        <div class="esquinaCuatro"></div>
+    </div>
+
+    <div class="animacionesEnemigo">
+        <img id="animacionAtaqueEnEnemigo" src="../imagenes/animaciones/none.png" alt="">
+    </div>
+
+    <div class="animacionesHeroe">
+        <img id="animacionAtaqueEnHeroe" src="../imagenes/animaciones/none.png" alt="">
+    </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/main.js"></script>
+<script src="../js/seleccionRaza.js"></script>
+<script src="../js/creadorHeroe.js"></script>
+<script src="../js/creadorEnemigos.js"></script>
+<script src="../js/acciones.js"></script>
+<script src="../js/animaciones.js"></script>
+
+
+
+</html>

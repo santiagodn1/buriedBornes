@@ -1,0 +1,297 @@
+html {
+    background-color: black;
+    color: white;
+
+}
+
+/* MENU INICIO */
+.menuInicial{
+  display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;  
+    height: 90%;
+    padding: 15px;
+    gap: 5px; 
+    border: solid 5px white;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+#textoTutorial {
+    display: none;
+}
+
+
+#volver1{
+    display: none;
+}
+
+#inicio{
+    display:block;
+}
+
+
+   /* SELECCION RAZA */
+
+   #seleccionRaza {
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "fichaRaza imagenHumano imagenOrco"
+      "fichaRaza imagenElfo imagenNomuerto"; 
+
+    background-color: black;
+    height: 100%;
+    padding: 15px;
+  }
+  #fichaRaza { grid-area: fichaRaza; 
+    overflow: hidden;
+    text-align: start;
+    margin-bottom: 700px;}
+
+  .imagenHumano { grid-area: imagenHumano;
+      display:block;
+      width: 400px;
+      height: 400px;
+      background-image: url("../imagenes/razas/humano.jpg");
+  }
+
+  .imagenOrco { grid-area: imagenOrco; 
+    display:block;
+    width: 400px;
+    height: 400px;
+    background-image: url("../imagenes/razas/orco.jpg");}
+
+  .imagenElfo { grid-area: imagenElfo; 
+    display:block;
+    width: 400px;
+    height: 400px;
+    background-image: url("../imagenes/razas/elfos.jpg");}
+
+  .imagenNomuerto { grid-area: imagenNomuerto; 
+    display:block;
+    width: 400px;
+    height: 400px;
+    background-image: url("../imagenes/razas/nomuerto.jpg");}
+
+
+
+  #seleccionRaza a{
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+  }
+  #seleccionRaza a:hover {
+    box-shadow: 0px 0px 15px 10px white;
+    transition: 0.25s;
+}
+
+
+#textoHumano {
+  visibility: hidden;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 400px;
+}
+
+#textoOrco {
+  visibility: hidden;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 400px;
+}
+
+#textoElfo {
+  visibility: hidden;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 400px;
+}
+
+#textoNomuerto {
+  visibility: hidden;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 400px;
+}
+
+    /* FIN SELECCION RAZA */
+ 
+
+   /* SELECCION CLASE */
+   #seleccionClase {
+    display: none; 
+    justify-content: center; 
+    align-items: center;   
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "fichaHeroe imagenCaballero imagenMago"
+      "fichaHeroe imagenRanger imagenSacerdote"
+      "fichaHeroe imagenPaladin imagenLadron"; 
+  
+    background-color: black;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+
+  }
+
+  .imagenCaballero{
+    width: 220px;
+    height: 220px;
+    background-image: url("../imagenes/personajes/caballero.jpg");
+}
+
+.imagenMago{
+    width: 220px;
+    height: 220px;
+    background-image: url("../imagenes/personajes/mago.jpg");
+}
+
+.imagenRanger{
+    width: 220px;
+    height: 220px;
+    background-image: url("../imagenes/personajes/ranger.jpg");
+}
+
+.imagenSacerdote{
+    width: 220px;
+    height: 220px;
+    background-image: url("../imagenes/personajes/sacerdote.jpg");
+}
+
+.imagenPaladin{
+    width: 220px;
+    height: 220px;
+    background-image: url("../imagenes/personajes/paladin.jpg");
+}
+
+.imagenLadron{
+    width: 220px;
+    height: 220px;
+    background-image: url("../imagenes/personajes/ladron.JPG");
+}
+
+#seleccionClase a{
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+  }
+  #seleccionClase a:hover {
+    box-shadow: 0px 0px 15px 10px white;
+    transition: 0.25s;
+}
+#fichaHeroe { grid-area: fichaHeroe; 
+    overflow: hidden;
+    text-align: start;
+    margin-bottom: 700px;}
+
+
+/* FIN SELECCION CLASE */
+
+  
+
+#laberintoEntrada {
+    display:none;
+   
+}
+
+/* overflow-y:*/
+
+/* VISTA DE INFO DE RAZA */
+
+
+.habilidadesHeroe img {
+  border: 3px solid black;
+  border-radius:0px
+}
+.habilidadesHeroe img:hover {
+  border: 3px solid white;
+  transition: 0.25s;
+}
+
+
+
+
+
+button {
+  position: flex;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none black;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+
+#descripcionClase{
+  position: absolute;
+  align-items: left;
+  text-align: left;
+  top: 100px;
+  left: 30px;
+  font-size: 20px;
+}
+
+#descripcionTemporalClase{
+  text-align: left;
+}
+
+.textoGolpeCritico{
+  background-color: yellow;
+  color: black;
+}
+
+.textoGolpeHeroe{
+  color: green;
+}
+
+.textoGolpeEnemigo{
+  color: red;
+}
+
+.textoSacrificio{
+  color: white;
+}
+
+.textoSanacion {
+  color: turquoise;
+}

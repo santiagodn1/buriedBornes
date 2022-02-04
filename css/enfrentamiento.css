@@ -1,0 +1,131 @@
+html { color:white;
+    background-color: black;
+
+}
+/* MAQUETADO DE CONTENEDOR DE BATALLA */
+#containerEnfrentamiento {
+    position: absolute;
+    top: 0px;
+    display: none;
+    opacity:0;
+    border: 2px solid white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "esquinaUno experienciaNivel experienciaNivel esquinaDos"
+    "statsHeroe vidaEnemigo enemigo registroBatalla"
+    "statsHeroe heroe vidaHeroe registroBatalla"
+    "esquinaTres habilidadesHeroe habilidadesHeroe esquinaCuatro";
+    width: 1200px;
+    height: 920px;
+    transition: 2s;
+  }
+  
+  .heroe { grid-area: heroe;
+    margin-top:60px;
+}
+  
+  .enemigo { grid-area: enemigo; }
+  
+  .statsHeroe { grid-area: statsHeroe; 
+    padding-left: 20px;
+    border: 2px solid #ffcc80;}
+  
+  .vidaEnemigo { grid-area: vidaEnemigo; 
+    padding: 5px;
+  text-align: center;}
+  
+  .vidaHeroe { grid-area: vidaHeroe; 
+    padding: 5px;
+  text-align: center;}
+  
+  .experienciaNivel { grid-area: experienciaNivel;
+    padding-top:15px;
+    border: 2px solid #ffcc80; 
+    text-align: center;}
+  
+  .habilidadesHeroe { grid-area: habilidadesHeroe; 
+    border: 2px solid #ffcc80;}
+  
+  .registroBatalla { grid-area: registroBatalla; 
+    overflow-y:scroll;
+    border: 2px solid #ffcc80;}
+
+.esquinaUno { grid-area: esquinaUno; 
+  text-align: center;
+    border: 2px solid #ffcc80; }
+.esquinaDos { grid-area: esquinaDos; 
+  text-align: center;
+    border: 2px solid #ffcc80; }
+.esquinaTres { grid-area: esquinaTres; 
+    border: 2px solid #ffcc80; }
+.esquinaCuatro { grid-area: esquinaCuatro; 
+    border: 2px solid #ffcc80; }
+
+.descripcionTemporal{
+  text-align: center;
+}
+
+.w3-red {
+  border: 1px white;
+}
+
+      
+    /* FIN MAQUETADO DE CONTENEDOR DE BATALLA*/
+
+
+
+.w3-yellow{
+  transition: 2s;
+}
+.w3-blue{
+  transition: 2s;
+}
+.w3-green{
+  transition: 2s;
+}
+.w3-red{
+  transition: 2s;
+}
+
+
+.animacionesEnemigo{
+  background: none;
+  position: absolute;
+  top: 120px;
+  left: 600px;
+}
+
+#animacionAtaqueEnHeroe{
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+#animacionAtaqueEnEnemigo{
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+.animacionesHeroe{
+  background: none;
+  position: absolute;
+  top: 500px;
+  left: 320px;
+  
+}
+
+#laberintoEntrada{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#laberintoEntrada:hover {
+  box-shadow: 0px 0px 15px 10px white;
+    transition: 0.25s;
+}
