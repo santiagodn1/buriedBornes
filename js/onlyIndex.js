@@ -1,13 +1,13 @@
 /// MENU FUNCIONAL ///
 function tutorial() {
     Swal.fire({
-        imageUrl: "imagenes/tutorial/tutorial1.jpg",
+        imageUrl: "imagenes/tutorial/tutorial1.png",
         width: 1200,
         confirmButtonText: 'Siguiente página',
 
     }).then((result) => {
         Swal.fire({
-            imageUrl: "imagenes/tutorial/tutorial2.jpg",
+            imageUrl: "imagenes/tutorial/tutorial2.png",
             width: 1200,
         })
 
